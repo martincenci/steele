@@ -1,0 +1,123 @@
+img, video {
+    max-width; 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.encabezado {
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+h1 {
+    display: inline-block;
+    width: 200px;
+}
+nav {
+    width: 70%;
+}
+.iconos {
+    width: 5%;
+}
+#flecha {
+    display: none;
+}
+header:hover #flecha {
+    display: block;
+}
+.fa-bars {
+    display: block;
+}
+header:hover .fa-bars {
+    display: none;
+}
+.menu {
+   
+    list-style: none;
+    display: none;
+    
+}
+header:hover .menu {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 220px;
+}
+.item {
+    text-decoration: none;
+    color: rgb(255, 0, 255);
+}
+.inicio {
+    background-color: darkgreen;
+    margin-top: 82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.inicio h2 {
+    margin-top: 50px;
+}
+.inicio img {
+    width: 100%;
+}
+.galeria {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: darkgreen;
+    margin-top: 82px;
+}
+.galeria div {
+    margin-top: 50px;
+}
+.drones {
+    background-color: darkgreen;
+    margin-top: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dr {
+    width: 50%;
+}
+.info {
+    background-color: darkgreen;
+    margin-top: 82px;
+}
+footer {
+    position: relative;
+    border-top: 2px solid #1c1d1d;
+    background-color: #7EE8FA;
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+footer a {
+    text-decoration: none;
+    color:crimson;
+}
+@media (min-width: 992px) {
+    .iconos {
+        display:none;
+    }
+    .menu {
+        display:flex;
+        justify-content: space-evenly;
+        height: 82px;
+        align-items: center;
+    }
+    header:hover .menu {
+        flex-direction: row;
+        height: 82px;
+        
+    }
+}
